@@ -1,9 +1,9 @@
 var chai = require('chai');
 var expect = chai.expect;
-var decrementIncrement = require('./index');
-var getDecrement = decrementIncrement._getDecrement;
-var getIncrement = decrementIncrement._getIncrement;
-var getDecrementIncrement = decrementIncrement.getDecrementIncrement;
+var incrementDecrement = require('./index');
+var getDecrement = incrementDecrement._getDecrement;
+var getIncrement = incrementDecrement._getIncrement;
+var getIncrementDecrement = incrementDecrement.getIncrementDecrement;
 
 describe('decrement increment module', function() {
 	
@@ -238,7 +238,7 @@ describe('decrement increment module', function() {
 		})
 	})
 
-	describe('getDecrementIncrement function', function() {
+	describe('getIncrementDecrement function', function() {
 		it('will get array of number form increment and decrement, including start number', function() {
 			var startNumber = 5;
 			var lengthNeeded = 2;
@@ -250,7 +250,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -271,7 +271,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -292,7 +292,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -313,7 +313,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -334,7 +334,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -355,7 +355,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -376,7 +376,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 3;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -397,7 +397,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 3;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -418,7 +418,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 3;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -439,7 +439,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -460,7 +460,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -481,7 +481,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
@@ -502,7 +502,7 @@ describe('decrement increment module', function() {
 			var maximumLimit = 10;
 			var minimumLimit = 1;
 			
-			var resultArrayOfNumber =  getDecrementIncrement({ 
+			var resultArrayOfNumber =  getIncrementDecrement({ 
 				startNumber : startNumber, 
 				lengthNeeded : lengthNeeded, 
 				minimumLimit : minimumLimit, 
