@@ -20,7 +20,7 @@ module.exports = (function() {
 		return increments;
 	}
 
-	function getDecrementIncrement(objectArgument) {
+	function getIncrementDecrement(objectArgument) {
 		
 		var arrayOfDecrementNumber = _getDecrement({
 			startNumber : objectArgument.startNumber,
@@ -65,6 +65,6 @@ module.exports = (function() {
 	return {
 		_getIncrement : _getIncrement,
 		_getDecrement : _getDecrement,
-		getDecrementIncrement : getDecrementIncrement
+		getIncrementDecrement : getIncrementDecrement
 	}
 })();
