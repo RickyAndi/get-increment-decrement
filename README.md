@@ -1,24 +1,24 @@
-# getDecrementIncrement
+# getIncrementDecrement
 
 will return numbers result from decrementing and incrementing, including its start number 
 
 ```javascript
 
-	var getDecrementIncrement = require('get-decrement-increment').getDecrementIncrement;
+	var getIncrementDecrement = require('get-increment-decrement').getIncrementDecrement;
 
 	var startNumber = 5;
 	var length = 4;
 	var minimumLimit = 1;
 	var maximumLimit = 10;
 
-	var decrementIncrement = getDecrementIncrement({
+	var incrementDecrement = getIncrementDecrement({
 		startNumber : startNumber,
 		lengthNeeded : length,
 		minimumLimit : minimumLimit,
 		maximumLimit : maximumLimit
 	});
 
-	console.log(decrementIncrement) // [1,2,3,4,5,6,7,8,9]
+	console.log(incrementDecrement) // [1,2,3,4,5,6,7,8,9]
 ```
 
 #### the result actually will not be ordered
@@ -36,21 +36,21 @@ will return numbers result from decrementing and incrementing, including its sta
 
 ```javascript
 
-	var getDecrementIncrement = require('get-decrement-increment').getDecrementIncrement;
+	var getIncrementDecrement = require('get-increment-decrement').getIncrementDecrement;
 
 	var startNumber = 2;
 	var length = 3;
 	var minimumLimit = 1;
 	var maximumLimit = 10;
 
-	var decrementIncrement = getDecrementIncrement({
+	var incrementDecrement =  getIncrementDecrement({
 		startNumber : startNumber,
 		lengthNeeded : length,
 		minimumLimit : minimumLimit,
 		maximumLimit : maximumLimit
 	});
 
-	console.log(decrementIncrement) // [1,2,3,4,5,6,7] -> decrementing only get [1], so the quota only fullfilled one, need two more, so incrementing side get extra two quota, [3,4,5,6,7]
+	console.log(incrementDecrement) // [1,2,3,4,5,6,7] -> decrementing only get [1], so the quota only fullfilled one, need two more, so incrementing side get extra two quota, [3,4,5,6,7]
 
 ```
 
@@ -58,33 +58,33 @@ will return numbers result from decrementing and incrementing, including its sta
 
 ```javascript
 
-	var getDecrementIncrement = require('get-decrement-increment').getDecrementIncrement;
+	var getIncrementDecrement = require('get-increment-decrement').getIncrementDecrement;
 
 	var startNumber = 9;
 	var length = 3;
 	var minimumLimit = 1;
 	var maximumLimit = 10;
 
-	var decrementIncrement = getDecrementIncrement({
+	var incrementDecrement = getIncrementDecrement({
 		startNumber : startNumber,
 		lengthNeeded : length,
 		minimumLimit : minimumLimit,
 		maximumLimit : maximumLimit
 	});
 
-	console.log(decrementIncrement) // [4,5,6,7,8,9,10] -> incrementing only get [10], so the quota only fullfilled one, need two more, so incrementing side get extra two quota, [4,5,6,7,8]
+	console.log(incrementDecrement) // [4,5,6,7,8,9,10] -> incrementing only get [10], so the quota only fullfilled one, need two more, so incrementing side get extra two quota, [4,5,6,7,8]
 
 ```
 
-#### inside this module there are two private function, only intended to be used inside function getDecrementIncrement, but you can used it
+#### inside this module there are two private function, only intended to be used inside function getIncrementDecrement, but you can used it
 
 # getDecrement
 
 ```javascript
 
-	var getDecrement = require('get-decrement-increment')._getDecrement;
+	var getDecrement = require('get-increment-decrement')._getIncrement;
 
-	var startNumber = 9;
+	var DecrementstartNumber = 9;
 	var length = 3;
 	var minimumLimit = 1;
 	
@@ -114,7 +114,7 @@ will return numbers result from decrementing and incrementing, including its sta
 
 ```javascript
 
-	var getIncrement = require('get-decrement-increment')._getIncrement;
+	var getIncrement = require('get-increment-decrement')._getIncrement;
 
 	var startNumber = 4;
 	var length = 3;
@@ -127,9 +127,7 @@ will return numbers result from decrementing and incrementing, including its sta
 	});
 
 	console.log(increment) // [5,6,7] -> start number not included
-
-	var getIncrement = require('get-decrement-increment')._getIncrement;
-
+	
 	var startNumber = 4;
 	var length = 3;
 	var maximumLimit = 6;
@@ -146,9 +144,8 @@ will return numbers result from decrementing and incrementing, including its sta
 # Installing
 
 
-`npm install get-decrement-increment`
+`npm install get-increment-decrement`
 
 
-# Test
-
-`npm test`
+# m test`
+Decrement
